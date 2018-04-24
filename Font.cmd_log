@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Course_Project -o F:/Course_Project/Font.tfi -lib work F:/Course_Project//Font.v -module Font -template d:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

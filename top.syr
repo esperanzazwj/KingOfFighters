@@ -1,0 +1,1445 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Mux4to1.vf" in library work
+Compiling verilog file "Mux441.v" in library work
+Module <Mux4to1> compiled
+Compiling verilog file "Scan_Code_ASCII.v" in library work
+Module <Mux441> compiled
+Compiling verilog file "PS2_Keyboard.v" in library work
+Module <Scan_Code_ASCII> compiled
+Compiling verilog file "p2_rom_red.v" in library work
+Module <PS2_Keyboard> compiled
+Compiling verilog file "p2_rom_green.v" in library work
+Module <p2_rom_red> compiled
+Compiling verilog file "p2_rom_blue.v" in library work
+Module <p2_rom_green> compiled
+Compiling verilog file "p1_rom_red.v" in library work
+Module <p2_rom_blue> compiled
+Compiling verilog file "p1_rom_green.v" in library work
+Module <p1_rom_red> compiled
+Compiling verilog file "p1_rom_blue.v" in library work
+Module <p1_rom_green> compiled
+Compiling verilog file "MY_MC14495.vf" in library work
+Module <p1_rom_blue> compiled
+Compiling verilog file "Font_ROM.v" in library work
+Module <MY_MC14495> compiled
+Compiling verilog file "Dispsync.vf" in library work
+Module <Font_ROM> compiled
+Module <Mux4to1_MUSER_Dispsync> compiled
+Compiling verilog file "clkdiv.v" in library work
+Module <Dispsync> compiled
+Compiling verilog file "vga_sync.v" in library work
+Module <clkdiv> compiled
+Compiling verilog file "Timer.v" in library work
+Module <vga_sync> compiled
+Compiling verilog file "PS2_Read.v" in library work
+Module <Timer> compiled
+Compiling verilog file "graph.v" in library work
+Module <PS2_Read> compiled
+Compiling verilog file "Font.v" in library work
+Module <graph> compiled
+Compiling verilog file "disp_num.vf" in library work
+Module <Font> compiled
+Module <MY_MC14495_MUSER_disp_num> compiled
+Module <Mux4to1_MUSER_disp_num> compiled
+Module <Dispsync_MUSER_disp_num> compiled
+Compiling verilog file "Blood_Counter.v" in library work
+Module <disp_num> compiled
+Compiling verilog file "BCD_cvt_t.v" in library work
+Module <Blood_Counter> compiled
+Compiling verilog file "BCD_cvt.v" in library work
+Module <BCD_cvt_t> compiled
+Compiling verilog file "top.v" in library work
+Module <BCD_cvt> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work> with parameters.
+	gameover_state = "11"
+	hit_interval = "00000101"
+	hit_kick = "00001010"
+	hit_punch = "00001111"
+	run_state = "01"
+	start_state = "00"
+	timeout_state = "10"
+
+Analyzing hierarchy for module <PS2_Read> in library <work>.
+
+Analyzing hierarchy for module <vga_sync> in library <work> with parameters.
+	HB = "00000000000000000000000000010000"
+	HD = "00000000000000000000001010000000"
+	HF = "00000000000000000000000000110000"
+	HR = "00000000000000000000000001100000"
+	VB = "00000000000000000000000000100001"
+	VD = "00000000000000000000000111100000"
+	VF = "00000000000000000000000000001010"
+	VR = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <Blood_Counter> in library <work> with parameters.
+	blood_init = "0110010001100100"
+
+Analyzing hierarchy for module <Timer> in library <work> with parameters.
+	freq = "00000001011111010111100001000000"
+	limit_time = "0111100"
+
+Analyzing hierarchy for module <BCD_cvt> in library <work>.
+
+Analyzing hierarchy for module <BCD_cvt_t> in library <work>.
+
+Analyzing hierarchy for module <graph> in library <work> with parameters.
+	action_frame = "011"
+	backward = "010"
+	bar_lx = "0011001000"
+	bar_ly = "0000110010"
+	delay = "00000000000000000000000000000101"
+	forward = "001"
+	gameover_state = "00000000000000000000000000000011"
+	kick = "100"
+	p1_bar_x = "0000001010"
+	p1_bar_y = "0000001010"
+	p1_init_x = "0001100100"
+	p1_init_y = "0101111100"
+	p1_lx = "0001000000"
+	p1_ly = "0001000000"
+	p1_speed = "0000000100"
+	p2_bar_x = "0101001010"
+	p2_bar_y = "0000001010"
+	p2_init_x = "0110101001"
+	p2_init_y = "0101111100"
+	p2_lx = "0001000000"
+	p2_ly = "0001000000"
+	p2_speed = "0000000100"
+	p_block = "0000100000"
+	p_wall = "1001101100"
+	punch = "011"
+	run_state = "00000000000000000000000000000001"
+	start_state = "00000000000000000000000000000000"
+	stay = "000"
+	timeout_state = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <Font> in library <work> with parameters.
+	gameover_state = "00000000000000000000000000000011"
+	run_state = "00000000000000000000000000000001"
+	start_state = "00000000000000000000000000000000"
+	timeout_state = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <disp_num> in library <work>.
+
+Analyzing hierarchy for module <PS2_Keyboard> in library <work>.
+
+Analyzing hierarchy for module <Scan_Code_ASCII> in library <work> with parameters.
+	Scan_0 = "01000101"
+	Scan_1 = "00010110"
+	Scan_2 = "00011110"
+	Scan_3 = "00100110"
+	Scan_4 = "00100101"
+	Scan_5 = "00101110"
+	Scan_6 = "00110110"
+	Scan_7 = "00111101"
+	Scan_8 = "00111110"
+	Scan_9 = "01000110"
+	Scan_A = "00011100"
+	Scan_B = "00110010"
+	Scan_Back = "01100110"
+	Scan_C = "00100001"
+	Scan_D = "00100011"
+	Scan_Down = "01110010"
+	Scan_E = "00100100"
+	Scan_Enter = "01011010"
+	Scan_Esc = "01110110"
+	Scan_F = "00101011"
+	Scan_G = "00110100"
+	Scan_H = "00110011"
+	Scan_I = "01000011"
+	Scan_J = "00111011"
+	Scan_K = "01000010"
+	Scan_L = "01001011"
+	Scan_Left = "01101011"
+	Scan_M = "00111010"
+	Scan_N = "00110001"
+	Scan_O = "01000100"
+	Scan_P = "01001101"
+	Scan_Q = "00010101"
+	Scan_R = "00101101"
+	Scan_Right = "01110100"
+	Scan_S = "00011011"
+	Scan_Space = "00101001"
+	Scan_T = "00101100"
+	Scan_U = "00111100"
+	Scan_Up = "01110101"
+	Scan_V = "00101010"
+	Scan_W = "00011101"
+	Scan_X = "00100010"
+	Scan_Y = "00110101"
+	Scan_Z = "00011010"
+
+Analyzing hierarchy for module <p1_rom_red> in library <work>.
+
+Analyzing hierarchy for module <p1_rom_green> in library <work>.
+
+Analyzing hierarchy for module <p1_rom_blue> in library <work>.
+
+Analyzing hierarchy for module <p2_rom_red> in library <work>.
+
+Analyzing hierarchy for module <p2_rom_green> in library <work>.
+
+Analyzing hierarchy for module <p2_rom_blue> in library <work>.
+
+Analyzing hierarchy for module <Font_ROM> in library <work>.
+
+Analyzing hierarchy for module <clkdiv> in library <work>.
+
+Analyzing hierarchy for module <Dispsync_MUSER_disp_num> in library <work>.
+
+Analyzing hierarchy for module <MY_MC14495_MUSER_disp_num> in library <work>.
+
+Analyzing hierarchy for module <Mux441> in library <work>.
+
+Analyzing hierarchy for module <Mux4to1_MUSER_disp_num> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+	gameover_state = 2'b11
+	hit_interval = 8'b00000101
+	hit_kick = 8'b00001010
+	hit_punch = 8'b00001111
+	run_state = 2'b01
+	start_state = 2'b00
+	timeout_state = 2'b10
+Module <top> is correct for synthesis.
+ 
+Analyzing module <PS2_Read> in library <work>.
+Module <PS2_Read> is correct for synthesis.
+ 
+Analyzing module <PS2_Keyboard> in library <work>.
+Module <PS2_Keyboard> is correct for synthesis.
+ 
+Analyzing module <Scan_Code_ASCII> in library <work>.
+	Scan_0 = 8'b01000101
+	Scan_1 = 8'b00010110
+	Scan_2 = 8'b00011110
+	Scan_3 = 8'b00100110
+	Scan_4 = 8'b00100101
+	Scan_5 = 8'b00101110
+	Scan_6 = 8'b00110110
+	Scan_7 = 8'b00111101
+	Scan_8 = 8'b00111110
+	Scan_9 = 8'b01000110
+	Scan_A = 8'b00011100
+	Scan_B = 8'b00110010
+	Scan_Back = 8'b01100110
+	Scan_C = 8'b00100001
+	Scan_D = 8'b00100011
+	Scan_Down = 8'b01110010
+	Scan_E = 8'b00100100
+	Scan_Enter = 8'b01011010
+	Scan_Esc = 8'b01110110
+	Scan_F = 8'b00101011
+	Scan_G = 8'b00110100
+	Scan_H = 8'b00110011
+	Scan_I = 8'b01000011
+	Scan_J = 8'b00111011
+	Scan_K = 8'b01000010
+	Scan_L = 8'b01001011
+	Scan_Left = 8'b01101011
+	Scan_M = 8'b00111010
+	Scan_N = 8'b00110001
+	Scan_O = 8'b01000100
+	Scan_P = 8'b01001101
+	Scan_Q = 8'b00010101
+	Scan_R = 8'b00101101
+	Scan_Right = 8'b01110100
+	Scan_S = 8'b00011011
+	Scan_Space = 8'b00101001
+	Scan_T = 8'b00101100
+	Scan_U = 8'b00111100
+	Scan_Up = 8'b01110101
+	Scan_V = 8'b00101010
+	Scan_W = 8'b00011101
+	Scan_X = 8'b00100010
+	Scan_Y = 8'b00110101
+	Scan_Z = 8'b00011010
+Module <Scan_Code_ASCII> is correct for synthesis.
+ 
+Analyzing module <vga_sync> in library <work>.
+	HB = 32'sb00000000000000000000000000010000
+	HD = 32'sb00000000000000000000001010000000
+	HF = 32'sb00000000000000000000000000110000
+	HR = 32'sb00000000000000000000000001100000
+	VB = 32'sb00000000000000000000000000100001
+	VD = 32'sb00000000000000000000000111100000
+	VF = 32'sb00000000000000000000000000001010
+	VR = 32'sb00000000000000000000000000000010
+Module <vga_sync> is correct for synthesis.
+ 
+Analyzing module <Blood_Counter> in library <work>.
+	blood_init = 16'b0110010001100100
+Module <Blood_Counter> is correct for synthesis.
+ 
+Analyzing module <Timer> in library <work>.
+	freq = 32'sb00000001011111010111100001000000
+	limit_time = 7'b0111100
+Module <Timer> is correct for synthesis.
+ 
+Analyzing module <BCD_cvt> in library <work>.
+Module <BCD_cvt> is correct for synthesis.
+ 
+Analyzing module <BCD_cvt_t> in library <work>.
+Module <BCD_cvt_t> is correct for synthesis.
+ 
+Analyzing module <graph> in library <work>.
+	action_frame = 3'b011
+	backward = 3'b010
+	bar_lx = 10'b0011001000
+	bar_ly = 10'b0000110010
+	delay = 32'sb00000000000000000000000000000101
+	forward = 3'b001
+	gameover_state = 32'sb00000000000000000000000000000011
+	kick = 3'b100
+	p1_bar_x = 10'b0000001010
+	p1_bar_y = 10'b0000001010
+	p1_init_x = 10'b0001100100
+	p1_init_y = 10'b0101111100
+	p1_lx = 10'b0001000000
+	p1_ly = 10'b0001000000
+	p1_speed = 10'b0000000100
+	p2_bar_x = 10'b0101001010
+	p2_bar_y = 10'b0000001010
+	p2_init_x = 10'b0110101001
+	p2_init_y = 10'b0101111100
+	p2_lx = 10'b0001000000
+	p2_ly = 10'b0001000000
+	p2_speed = 10'b0000000100
+	p_block = 10'b0000100000
+	p_wall = 10'b1001101100
+	punch = 3'b011
+	run_state = 32'sb00000000000000000000000000000001
+	start_state = 32'sb00000000000000000000000000000000
+	stay = 3'b000
+	timeout_state = 32'sb00000000000000000000000000000010
+Module <graph> is correct for synthesis.
+ 
+Analyzing module <p1_rom_red> in library <work>.
+Module <p1_rom_red> is correct for synthesis.
+ 
+Analyzing module <p1_rom_green> in library <work>.
+Module <p1_rom_green> is correct for synthesis.
+ 
+Analyzing module <p1_rom_blue> in library <work>.
+Module <p1_rom_blue> is correct for synthesis.
+ 
+Analyzing module <p2_rom_red> in library <work>.
+Module <p2_rom_red> is correct for synthesis.
+ 
+Analyzing module <p2_rom_green> in library <work>.
+Module <p2_rom_green> is correct for synthesis.
+ 
+Analyzing module <p2_rom_blue> in library <work>.
+Module <p2_rom_blue> is correct for synthesis.
+ 
+Analyzing module <Font> in library <work>.
+	gameover_state = 32'sb00000000000000000000000000000011
+	run_state = 32'sb00000000000000000000000000000001
+	start_state = 32'sb00000000000000000000000000000000
+	timeout_state = 32'sb00000000000000000000000000000010
+WARNING:Xst:2725 - "Font.v" line 125: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Font.v" line 126: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Font.v" line 127: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Font.v" line 128: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Font.v" line 129: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Font.v" line 130: Size mismatch between case item and case selector.
+Module <Font> is correct for synthesis.
+ 
+Analyzing module <Font_ROM> in library <work>.
+Module <Font_ROM> is correct for synthesis.
+ 
+Analyzing module <disp_num> in library <work>.
+Module <disp_num> is correct for synthesis.
+ 
+Analyzing module <clkdiv> in library <work>.
+Module <clkdiv> is correct for synthesis.
+ 
+Analyzing module <Dispsync_MUSER_disp_num> in library <work>.
+Module <Dispsync_MUSER_disp_num> is correct for synthesis.
+ 
+Analyzing module <Mux441> in library <work>.
+WARNING:Xst:905 - "Mux441.v" line 27: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <num1>, <num2>, <num3>, <num4>
+Module <Mux441> is correct for synthesis.
+ 
+Analyzing module <Mux4to1_MUSER_disp_num> in library <work>.
+Module <Mux4to1_MUSER_disp_num> is correct for synthesis.
+ 
+Analyzing module <MY_MC14495_MUSER_disp_num> in library <work>.
+Module <MY_MC14495_MUSER_disp_num> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "vga_sync.v".
+    Found 10-bit up counter for signal <h_count_reg>.
+    Found 10-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 92.
+    Found 10-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 92.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod2_reg>.
+    Found 10-bit up counter for signal <v_count_reg>.
+    Found 10-bit comparator greatequal for signal <v_sync_next$cmp_ge0000> created at line 95.
+    Found 10-bit comparator lessequal for signal <v_sync_next$cmp_le0000> created at line 95.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 11-bit comparator less for signal <video_on$cmp_lt0000> created at line 99.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 99.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_sync> synthesized.
+
+
+Synthesizing Unit <Blood_Counter>.
+    Related source file is "Blood_Counter.v".
+    Found 8-bit subtractor for signal <$sub0000> created at line 52.
+    Found 8-bit subtractor for signal <$sub0001> created at line 59.
+    Found 16-bit register for signal <blood_next>.
+    Found 16-bit register for signal <blood_reg>.
+    Found 1-bit register for signal <over_next>.
+    Found 8-bit comparator lessequal for signal <over_next$cmp_le0000> created at line 53.
+    Found 8-bit comparator lessequal for signal <over_next$cmp_le0001> created at line 46.
+    Found 1-bit register for signal <over_reg>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Blood_Counter> synthesized.
+
+
+Synthesizing Unit <Timer>.
+    Related source file is "Timer.v".
+    Found 32-bit up counter for signal <clk_1s>.
+    Found 1-bit register for signal <timeout_reg>.
+    Found 7-bit down counter for signal <times>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Timer> synthesized.
+
+
+Synthesizing Unit <BCD_cvt>.
+    Related source file is "BCD_cvt.v".
+    Found 4-bit subtractor for signal <$sub0000> created at line 31.
+    Found 4-bit subtractor for signal <$sub0002> created at line 41.
+    Found 4-bit subtractor for signal <$sub0003> created at line 46.
+    Found 4-bit subtractor for signal <$sub0004> created at line 51.
+    Found 4-bit subtractor for signal <$sub0005> created at line 56.
+    Found 4-bit subtractor for signal <$sub0006> created at line 61.
+    Found 4-bit subtractor for signal <$sub0007> created at line 66.
+    Found 4-bit subtractor for signal <$sub0008> created at line 78.
+    Found 4-bit subtractor for signal <$sub0010> created at line 88.
+    Found 4-bit subtractor for signal <$sub0011> created at line 93.
+    Found 4-bit subtractor for signal <$sub0012> created at line 98.
+    Found 4-bit subtractor for signal <$sub0013> created at line 103.
+    Found 4-bit subtractor for signal <$sub0014> created at line 108.
+    Found 4-bit subtractor for signal <$sub0015> created at line 113.
+    Found 8-bit comparator greatequal for signal <bcd_12$cmp_ge0000> created at line 68.
+    Found 8-bit comparator greatequal for signal <bcd_13$cmp_ge0000> created at line 58.
+    Found 8-bit comparator greatequal for signal <bcd_13$cmp_ge0001> created at line 63.
+    Found 8-bit comparator greatequal for signal <bcd_14$cmp_ge0000> created at line 38.
+    Found 8-bit comparator greatequal for signal <bcd_14$cmp_ge0001> created at line 43.
+    Found 8-bit comparator greatequal for signal <bcd_14$cmp_ge0002> created at line 48.
+    Found 8-bit comparator greatequal for signal <bcd_14$cmp_ge0003> created at line 53.
+    Found 8-bit comparator greatequal for signal <bcd_15$cmp_ge0000> created at line 28.
+    Found 8-bit comparator greatequal for signal <bcd_15$cmp_ge0001> created at line 33.
+    Found 8-bit comparator greatequal for signal <bcd_4$cmp_ge0000> created at line 115.
+    Found 8-bit comparator greatequal for signal <bcd_5$cmp_ge0000> created at line 105.
+    Found 8-bit comparator greatequal for signal <bcd_5$cmp_ge0001> created at line 110.
+    Found 8-bit comparator greatequal for signal <bcd_6$cmp_ge0000> created at line 85.
+    Found 8-bit comparator greatequal for signal <bcd_6$cmp_ge0001> created at line 90.
+    Found 8-bit comparator greatequal for signal <bcd_6$cmp_ge0002> created at line 95.
+    Found 8-bit comparator greatequal for signal <bcd_6$cmp_ge0003> created at line 100.
+    Found 8-bit comparator greatequal for signal <bcd_7$cmp_ge0000> created at line 75.
+    Found 8-bit comparator greatequal for signal <bcd_7$cmp_ge0001> created at line 80.
+    Found 16-bit register for signal <data>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred  18 Comparator(s).
+Unit <BCD_cvt> synthesized.
+
+
+Synthesizing Unit <BCD_cvt_t>.
+    Related source file is "BCD_cvt_t.v".
+    Found 4-bit subtractor for signal <$sub0000> created at line 31.
+    Found 4-bit subtractor for signal <$sub0002> created at line 41.
+    Found 4-bit subtractor for signal <$sub0003> created at line 46.
+    Found 4-bit subtractor for signal <$sub0004> created at line 51.
+    Found 4-bit subtractor for signal <$sub0005> created at line 56.
+    Found 4-bit subtractor for signal <$sub0006> created at line 61.
+    Found 4-bit subtractor for signal <$sub0007> created at line 66.
+    Found 7-bit comparator greatequal for signal <bcd_4$cmp_ge0000> created at line 68.
+    Found 7-bit comparator greatequal for signal <bcd_5$cmp_ge0000> created at line 58.
+    Found 7-bit comparator greatequal for signal <bcd_5$cmp_ge0001> created at line 63.
+    Found 7-bit comparator greatequal for signal <bcd_6$cmp_ge0000> created at line 38.
+    Found 7-bit comparator greatequal for signal <bcd_6$cmp_ge0001> created at line 43.
+    Found 7-bit comparator greatequal for signal <bcd_6$cmp_ge0002> created at line 48.
+    Found 7-bit comparator greatequal for signal <bcd_6$cmp_ge0003> created at line 53.
+    Found 7-bit comparator greatequal for signal <bcd_7$cmp_ge0000> created at line 28.
+    Found 7-bit comparator greatequal for signal <bcd_7$cmp_ge0001> created at line 33.
+    Found 7-bit register for signal <data>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <BCD_cvt_t> synthesized.
+
+
+Synthesizing Unit <PS2_Keyboard>.
+    Related source file is "PS2_Keyboard.v".
+    Found 4-bit up counter for signal <cnt>.
+    Found 10-bit register for signal <data>.
+    Found 8-bit register for signal <data_in>.
+    Found 1-bit register for signal <key_break>.
+    Found 1-bit register for signal <key_done>.
+    Found 1-bit register for signal <key_expand>.
+    Found 1-bit register for signal <negedge_ps2_clk_shift>.
+    Found 1-bit register for signal <ps2_clk_sign0>.
+    Found 1-bit register for signal <ps2_clk_sign1>.
+    Found 1-bit register for signal <ps2_clk_sign2>.
+    Found 1-bit register for signal <ps2_clk_sign3>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  26 D-type flip-flop(s).
+Unit <PS2_Keyboard> synthesized.
+
+
+Synthesizing Unit <Scan_Code_ASCII>.
+    Related source file is "Scan_Code_ASCII.v".
+    Found 8-bit register for signal <data_ascii>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Scan_Code_ASCII> synthesized.
+
+
+Synthesizing Unit <p1_rom_red>.
+    Related source file is "p1_rom_red.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <bitmap>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <addr_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <p1_rom_red> synthesized.
+
+
+Synthesizing Unit <p1_rom_green>.
+    Related source file is "p1_rom_green.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <bitmap>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <addr_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <p1_rom_green> synthesized.
+
+
+Synthesizing Unit <p1_rom_blue>.
+    Related source file is "p1_rom_blue.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <bitmap>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <addr_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <p1_rom_blue> synthesized.
+
+
+Synthesizing Unit <p2_rom_red>.
+    Related source file is "p2_rom_red.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <bitmap>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <addr_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <p2_rom_red> synthesized.
+
+
+Synthesizing Unit <p2_rom_green>.
+    Related source file is "p2_rom_green.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <bitmap>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <addr_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <p2_rom_green> synthesized.
+
+
+Synthesizing Unit <p2_rom_blue>.
+    Related source file is "p2_rom_blue.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <bitmap>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <addr_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <p2_rom_blue> synthesized.
+
+
+Synthesizing Unit <Font_ROM>.
+    Related source file is "Font_ROM.v".
+WARNING:Xst:737 - Found 8-bit latch for signal <data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 11-bit register for signal <addr_reg>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <Font_ROM> synthesized.
+
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "clkdiv.v".
+    Found 32-bit up counter for signal <clkdiv>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <clkdiv> synthesized.
+
+
+Synthesizing Unit <Mux441>.
+    Related source file is "Mux441.v".
+    Found 4-bit 4-to-1 multiplexer for signal <num>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Mux441> synthesized.
+
+
+Synthesizing Unit <PS2_Read>.
+    Related source file is "PS2_Read.v".
+    Found 8-bit register for signal <ascii>.
+    Found 5-bit register for signal <ready_shift>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+Unit <PS2_Read> synthesized.
+
+
+Synthesizing Unit <graph>.
+    Related source file is "graph.v".
+WARNING:Xst:1780 - Signal <p2_y_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p2_delay> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p2_bitrow<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p2_bitcol<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p2_anime> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <p1_y_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p1_bitrow<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p1_bitcol<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <hit_reg<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit adder for signal <$add0000> created at line 221.
+    Found 3-bit adder for signal <$add0001> created at line 262.
+    Found 10-bit comparator greatequal for signal <ground_on>.
+    Found 5-bit register for signal <hit_reg>.
+    Found 4-bit register for signal <hit_reg_next<3:0>>.
+    Found 10-bit comparator lessequal for signal <hit_reg_next_3$cmp_le0000> created at line 185.
+    Found 3-bit comparator less for signal <mux0000$cmp_lt0000> created at line 216.
+    Found 3-bit comparator less for signal <mux0003$cmp_lt0000> created at line 257.
+    Found 10-bit adder for signal <old_p1_x_next_7$addsub0000> created at line 274.
+    Found 10-bit adder for signal <old_p1_x_next_7$addsub0001> created at line 274.
+    Found 10-bit comparator greater for signal <old_p1_x_next_7$cmp_gt0000> created at line 276.
+    Found 10-bit comparator lessequal for signal <old_p1_x_next_7$cmp_le0000> created at line 274.
+    Found 10-bit addsub for signal <old_p1_x_next_7$share0000>.
+    Found 5-bit subtractor for signal <old_p2_delay_next_6$sub0000> created at line 259.
+    Found 1-bit register for signal <p1_anime>.
+    Found 1-bit register for signal <p1_anime_next>.
+    Found 10-bit comparator lessequal for signal <p1_bar_on$cmp_ge0000> created at line 86.
+    Found 10-bit comparator lessequal for signal <p1_bar_on$cmp_ge0001> created at line 86.
+    Found 10-bit comparator greatequal for signal <p1_bar_on$cmp_le0000> created at line 86.
+    Found 10-bit comparator greatequal for signal <p1_bar_on$cmp_le0001> created at line 86.
+    Found 10-bit adder for signal <p1_bar_rgb$addsub0000> created at line 87.
+    Found 10-bit comparator greatequal for signal <p1_bar_rgb$cmp_ge0000> created at line 87.
+    Found 1-bit 16-to-1 multiplexer for signal <p1_bit_b>.
+    Found 1-bit 16-to-1 multiplexer for signal <p1_bit_g>.
+    Found 1-bit 16-to-1 multiplexer for signal <p1_bit_r>.
+    Found 6-bit subtractor for signal <p1_bitcol>.
+    Found 5-bit register for signal <p1_delay>.
+    Found 5-bit register for signal <p1_delay_next>.
+    Found 10-bit adder for signal <p1_on$add0000> created at line 94.
+    Found 10-bit comparator greatequal for signal <p1_on$cmp_ge0000> created at line 94.
+    Found 10-bit comparator lessequal for signal <p1_on$cmp_ge0001> created at line 94.
+    Found 10-bit comparator lessequal for signal <p1_on$cmp_le0000> created at line 94.
+    Found 10-bit comparator greatequal for signal <p1_on$cmp_le0001> created at line 94.
+    Found 6-bit register for signal <p1_state>.
+    Found 6-bit register for signal <p1_state_next>.
+    Found 10-bit register for signal <p1_x>.
+    Found 10-bit register for signal <p1_x_next>.
+    Found 1-bit register for signal <p2_anime_next>.
+    Found 10-bit comparator lessequal for signal <p2_bar_on$cmp_ge0000> created at line 90.
+    Found 10-bit comparator greatequal for signal <p2_bar_on$cmp_le0000> created at line 90.
+    Found 12-bit comparator lessequal for signal <p2_bar_rgb$cmp_le0000> created at line 91.
+    Found 12-bit adder for signal <p2_bar_rgb$sub0000> created at line 91.
+    Found 1-bit 16-to-1 multiplexer for signal <p2_bit_b>.
+    Found 1-bit 16-to-1 multiplexer for signal <p2_bit_g>.
+    Found 1-bit 16-to-1 multiplexer for signal <p2_bit_r>.
+    Found 6-bit subtractor for signal <p2_bitcol>.
+    Found 6-bit subtractor for signal <p2_bitrow>.
+    Found 5-bit register for signal <p2_delay_next>.
+    Found 10-bit adder for signal <p2_on$add0000> created at line 109.
+    Found 10-bit comparator greatequal for signal <p2_on$cmp_ge0000> created at line 109.
+    Found 10-bit comparator lessequal for signal <p2_on$cmp_le0000> created at line 109.
+    Found 6-bit register for signal <p2_state>.
+    Found 6-bit register for signal <p2_state_next>.
+    Found 10-bit register for signal <p2_x>.
+    Found 10-bit register for signal <p2_x_next>.
+    Found 10-bit adder for signal <p2_x_next$addsub0000> created at line 278.
+    Found 10-bit adder for signal <p2_x_next$addsub0001> created at line 278.
+    Found 10-bit comparator lessequal for signal <p2_x_next$cmp_le0000> created at line 278.
+    Found 10-bit comparator less for signal <p2_x_next$cmp_lt0000> created at line 280.
+    Found 10-bit addsub for signal <p2_x_next$share0000>.
+    Summary:
+	inferred  91 D-type flip-flop(s).
+	inferred  17 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <graph> synthesized.
+
+
+Synthesizing Unit <Font>.
+    Related source file is "Font.v".
+WARNING:Xst:647 - Input <pixel_x<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pixel_y<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <video_on> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <font_addr<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x7-bit ROM for signal <gameover_addr$mux0000>.
+WARNING:Xst:737 - Found 7-bit latch for signal <p1win_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 7-bit latch for signal <p2win_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <font_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <font_row>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <font_col>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit comparator greatequal for signal <gameover_on$cmp_le0000> created at line 60.
+    Found 5-bit comparator lessequal for signal <gameover_on$cmp_le0001> created at line 60.
+    Found 5-bit comparator lessequal for signal <p1win_on$cmp_le0000> created at line 82.
+    Found 5-bit comparator greatequal for signal <start_on$cmp_le0000> created at line 42.
+    Found 5-bit comparator lessequal for signal <start_on$cmp_le0001> created at line 42.
+    Found 5-bit comparator greatequal for signal <time_on$cmp_le0000> created at line 140.
+    Found 5-bit comparator lessequal for signal <time_on$cmp_le0001> created at line 140.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Font> synthesized.
+
+
+Synthesizing Unit <MY_MC14495_MUSER_disp_num>.
+    Related source file is "disp_num.vf".
+Unit <MY_MC14495_MUSER_disp_num> synthesized.
+
+
+Synthesizing Unit <Mux4to1_MUSER_disp_num>.
+    Related source file is "disp_num.vf".
+Unit <Mux4to1_MUSER_disp_num> synthesized.
+
+
+Synthesizing Unit <Dispsync_MUSER_disp_num>.
+    Related source file is "disp_num.vf".
+Unit <Dispsync_MUSER_disp_num> synthesized.
+
+
+Synthesizing Unit <disp_num>.
+    Related source file is "disp_num.vf".
+WARNING:Xst:646 - Signal <clkd<31:19>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clkd<16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <disp_num> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:647 - Input <btn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sw<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <rgb_reg<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ready> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit adder for signal <$add0000> created at line 166.
+    Found 8-bit adder for signal <$add0001> created at line 168.
+    Found 8-bit register for signal <action_reg>.
+    Found 16-bit register for signal <blood_dec_next>.
+    Found 16-bit register for signal <blood_dec_reg>.
+    Found 2-bit register for signal <graph_state_reg>.
+    Found 8-bit register for signal <hit_valid_next>.
+    Found 8-bit adder for signal <hit_valid_next$addsub0000> created at line 171.
+    Found 8-bit register for signal <hit_valid_reg>.
+    Found 1-bit register for signal <keep_reg>.
+    Found 1-bit register for signal <reset_reg>.
+    Found 4-bit register for signal <rgb_reg>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 43
+ 10-bit adder                                          : 7
+ 10-bit addsub                                         : 2
+ 12-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit subtractor                                      : 21
+ 5-bit subtractor                                      : 2
+ 6-bit subtractor                                      : 3
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 2
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 7-bit down counter                                    : 1
+# Registers                                            : 105
+ 1-bit register                                        : 75
+ 10-bit register                                       : 11
+ 11-bit register                                       : 1
+ 16-bit register                                       : 3
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 5
+ 6-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 5
+# Latches                                              : 12
+ 16-bit latch                                          : 6
+ 3-bit latch                                           : 1
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 2
+ 8-bit latch                                           : 2
+# Comparators                                          : 64
+ 10-bit comparator greatequal                          : 10
+ 10-bit comparator greater                             : 1
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 11
+ 11-bit comparator less                                : 1
+ 12-bit comparator lessequal                           : 1
+ 3-bit comparator less                                 : 2
+ 5-bit comparator greatequal                           : 3
+ 5-bit comparator lessequal                            : 4
+ 7-bit comparator greatequal                           : 9
+ 8-bit comparator greatequal                           : 18
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 9
+ 1-bit 16-to-1 multiplexer                             : 6
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <data_ascii_7> (without init value) has a constant value of 0 in block <PS2_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_7> (without init value) has a constant value of 0 in block <ps2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_reg_3> (without init value) has a constant value of 0 in block <ftROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ready_shift_3> of sequential type is unconnected in block <ps2>.
+WARNING:Xst:2677 - Node <ready_shift_4> of sequential type is unconnected in block <ps2>.
+WARNING:Xst:2677 - Node <hit_reg_4> of sequential type is unconnected in block <gph>.
+WARNING:Xst:2677 - Node <rgb_reg_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2404 -  FFs/Latches <rgb_reg<3:3>> (without init value) have a constant value of 0 in block <top>.
+WARNING:Xst:2404 -  FFs/Latches <data_ascii<7:7>> (without init value) have a constant value of 0 in block <Scan_Code_ASCII>.
+WARNING:Xst:2404 -  FFs/Latches <hit_reg<4:4>> (without init value) have a constant value of 0 in block <graph>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 43
+ 10-bit adder                                          : 7
+ 10-bit addsub                                         : 2
+ 12-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit subtractor                                      : 21
+ 5-bit subtractor                                      : 2
+ 6-bit subtractor                                      : 3
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 2
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 7-bit down counter                                    : 1
+# Registers                                            : 331
+ Flip-Flops                                            : 331
+# Latches                                              : 12
+ 16-bit latch                                          : 6
+ 3-bit latch                                           : 1
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 2
+ 8-bit latch                                           : 2
+# Comparators                                          : 64
+ 10-bit comparator greatequal                          : 10
+ 10-bit comparator greater                             : 1
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 11
+ 11-bit comparator less                                : 1
+ 12-bit comparator lessequal                           : 1
+ 3-bit comparator less                                 : 2
+ 5-bit comparator greatequal                           : 3
+ 5-bit comparator lessequal                            : 4
+ 7-bit comparator greatequal                           : 9
+ 8-bit comparator greatequal                           : 18
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 9
+ 1-bit 16-to-1 multiplexer                             : 6
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <p2win_addr_5> in Unit <Font> is equivalent to the following 3 FFs/Latches, which will be removed : <p2win_addr_6> <p1win_addr_5> <p1win_addr_6> 
+INFO:Xst:2261 - The FF/Latch <p2win_addr_4> in Unit <Font> is equivalent to the following FF/Latch, which will be removed : <p1win_addr_4> 
+WARNING:Xst:1710 - FF/Latch <font_row_3> (without init value) has a constant value of 0 in block <Font>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p2win_addr_5> (without init value) has a constant value of 0 in block <Font>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <p2win_addr_2> in Unit <Font> is equivalent to the following FF/Latch, which will be removed : <p1win_addr_2> 
+WARNING:Xst:1710 - FF/Latch <blood_dec_next_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <blood_dec_next_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <blood_dec_next_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <blood_dec_next_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <blood_dec_next_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <blood_dec_next_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blood_dec_reg_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blood_dec_reg_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blood_dec_reg_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blood_dec_reg_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blood_dec_reg_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blood_dec_reg_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <disp/XLXI_1/clkdiv_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:1710 - FF/Latch <font_addr_5> (without init value) has a constant value of 0 in block <Font>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <font_addr_6> (without init value) has a constant value of 0 in block <Font>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <font_addr_7> of sequential type is unconnected in block <Font>.
+INFO:Xst:2261 - The FF/Latch <p2win_addr_3> in Unit <Font> is equivalent to the following FF/Latch, which will be removed : <p1win_addr_3> 
+
+Optimizing unit <top> ...
+
+Optimizing unit <vga_sync> ...
+
+Optimizing unit <Timer> ...
+
+Optimizing unit <BCD_cvt> ...
+
+Optimizing unit <BCD_cvt_t> ...
+
+Optimizing unit <PS2_Keyboard> ...
+
+Optimizing unit <Scan_Code_ASCII> ...
+
+Optimizing unit <MY_MC14495_MUSER_disp_num> ...
+
+Optimizing unit <Blood_Counter> ...
+
+Optimizing unit <p1_rom_red> ...
+INFO:Xst:2261 - The FF/Latch <bitmap_0> in Unit <p1_rom_red> is equivalent to the following 4 FFs/Latches, which will be removed : <bitmap_1> <bitmap_13> <bitmap_14> <bitmap_15> 
+
+Optimizing unit <p1_rom_green> ...
+
+Optimizing unit <p1_rom_blue> ...
+
+Optimizing unit <p2_rom_red> ...
+
+Optimizing unit <p2_rom_green> ...
+
+Optimizing unit <p2_rom_blue> ...
+INFO:Xst:2261 - The FF/Latch <bitmap_0> in Unit <p2_rom_blue> is equivalent to the following 4 FFs/Latches, which will be removed : <bitmap_1> <bitmap_2> <bitmap_14> <bitmap_15> 
+
+Optimizing unit <Font_ROM> ...
+
+Optimizing unit <PS2_Read> ...
+
+Optimizing unit <graph> ...
+WARNING:Xst:1710 - FF/Latch <p2_state_next_2> (without init value) has a constant value of 0 in block <graph>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p2_state_2> (without init value) has a constant value of 0 in block <graph>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p2_state_next_2> (without init value) has a constant value of 0 in block <graph>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p2_state_2> (without init value) has a constant value of 0 in block <graph>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Font> ...
+WARNING:Xst:2677 - Node <p2win_addr_0> of sequential type is unconnected in block <Font>.
+WARNING:Xst:2677 - Node <p2win_addr_1> of sequential type is unconnected in block <Font>.
+WARNING:Xst:1710 - FF/Latch <ps2/ascii_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ft/ftROM/addr_reg_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ft/ftROM/addr_reg_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ft/ftROM/addr_reg_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ps2/ready_shift_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <ps2/ready_shift_3> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_7> in Unit <top> is equivalent to the following 5 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_7> <gph/p2_r/addr_reg_7> <gph/p1_b/addr_reg_7> <gph/p1_g/addr_reg_7> <gph/p1_r/addr_reg_7> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_8> in Unit <top> is equivalent to the following 5 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_8> <gph/p2_r/addr_reg_8> <gph/p1_b/addr_reg_8> <gph/p1_g/addr_reg_8> <gph/p1_r/addr_reg_8> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_9> in Unit <top> is equivalent to the following 5 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_9> <gph/p2_r/addr_reg_9> <gph/p1_b/addr_reg_9> <gph/p1_g/addr_reg_9> <gph/p1_r/addr_reg_9> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_0> <gph/p2_r/addr_reg_0> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_1> <gph/p2_r/addr_reg_1> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_2> <gph/p2_r/addr_reg_2> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_3> <gph/p2_r/addr_reg_3> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_4> <gph/p2_r/addr_reg_4> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_5> <gph/p2_r/addr_reg_5> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/addr_reg_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p1_g/addr_reg_0> <gph/p1_r/addr_reg_0> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/addr_reg_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p1_g/addr_reg_1> <gph/p1_r/addr_reg_1> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/addr_reg_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p1_g/addr_reg_2> <gph/p1_r/addr_reg_2> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/addr_reg_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p1_g/addr_reg_3> <gph/p1_r/addr_reg_3> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/addr_reg_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p1_g/addr_reg_4> <gph/p1_r/addr_reg_4> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/addr_reg_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <gph/p1_g/addr_reg_5> <gph/p1_r/addr_reg_5> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_b/addr_reg_6> in Unit <top> is equivalent to the following 5 FFs/Latches, which will be removed : <gph/p2_g/addr_reg_6> <gph/p2_r/addr_reg_6> <gph/p1_b/addr_reg_6> <gph/p1_g/addr_reg_6> <gph/p1_r/addr_reg_6> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_1> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_0> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_0> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_2> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_11> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_4> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_6> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_15> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_15> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_1> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_3> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_14> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_14> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_7> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_9> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_15> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_15> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_4> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_6> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_8> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_10> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_10> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_8> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_12> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_7> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_12> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_9> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_5> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_13> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_2> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_13> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_3> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_5> 
+INFO:Xst:2261 - The FF/Latch <gph/p1_b/bitmap_10> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p1_g/bitmap_10> 
+INFO:Xst:2261 - The FF/Latch <gph/p2_g/bitmap_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gph/p2_r/bitmap_11> 
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 51.
+FlipFlop gph/p1_x_6 has been replicated 1 time(s)
+FlipFlop gph/p1_x_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 350
+ Flip-Flops                                            : 350
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 2198
+#      AND2                        : 17
+#      AND3                        : 11
+#      AND4                        : 9
+#      GND                         : 1
+#      INV                         : 47
+#      LUT1                        : 71
+#      LUT2                        : 245
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 271
+#      LUT3_D                      : 2
+#      LUT3_L                      : 5
+#      LUT4                        : 948
+#      LUT4_D                      : 26
+#      LUT4_L                      : 16
+#      MULT_AND                    : 1
+#      MUXCY                       : 209
+#      MUXF5                       : 174
+#      MUXF6                       : 18
+#      MUXF7                       : 10
+#      OR2                         : 7
+#      OR3                         : 3
+#      OR4                         : 6
+#      VCC                         : 1
+#      XORCY                       : 95
+# FlipFlops/Latches                : 431
+#      FD                          : 120
+#      FDC                         : 45
+#      FDCE                        : 64
+#      FDE                         : 36
+#      FDP                         : 8
+#      FDPE                        : 4
+#      FDR                         : 32
+#      FDRE                        : 20
+#      FDS                         : 21
+#      LD                          : 81
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 4
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      881  out of   1920    45%  
+ Number of Slice Flip Flops:            431  out of   3840    11%  
+ Number of 4 input LUTs:               1636  out of   3840    42%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  22  out of    173    12%  
+ Number of GCLKs:                         4  out of      8    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------+---------------------------+-------+
+Clock Signal                                            | Clock buffer(FF name)     | Load  |
+--------------------------------------------------------+---------------------------+-------+
+clk                                                     | BUFGP                     | 218   |
+fresh1(gph/frame_wg_cy<4>:O)                            | BUFG(*)(blood_dec_next_10)| 125   |
+ps2/ready_shift_2                                       | NONE(ps2/ascii_6)         | 7     |
+gph/p2_g/bitmap_not00011(gph/p2_b/bitmap_mux0000<8>61:O)| BUFG(*)(gph/p2_b/bitmap_0)| 29    |
+gph/p1_b/bitmap_not00011(gph/p1_g/bitmap_not00011:O)    | BUFG(*)(gph/p1_b/bitmap_0)| 28    |
+ft/ftROM/data_not0001(ft/ftROM/data_not0001_f5:O)       | NONE(*)(ft/ftROM/data_0)  | 8     |
+ft/font_addr_not0001(ft/font_addr_not00011:O)           | NONE(*)(ft/font_addr_4)   | 11    |
+ft/p1win_addr_not0001(ft/p1win_addr_not00011:O)         | NONE(*)(ft/p1win_addr_1)  | 5     |
+--------------------------------------------------------+---------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------+-------+
+Control Signal                     | Buffer(FF name)          | Load  |
+-----------------------------------+--------------------------+-------+
+sw<0>_inv(sw<0>_inv1_INV_0:O)      | NONE(blood_dec_reg_0)    | 61    |
+reset_reg(reset_reg:Q)             | NONE(blood_c/blood_reg_0)| 57    |
+sw<1>                              | IBUF                     | 3     |
+-----------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 19.852ns (Maximum Frequency: 50.372MHz)
+   Minimum input arrival time before clock: 5.384ns
+   Maximum output required time after clock: 20.658ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.986ns (frequency: 66.729MHz)
+  Total number of paths / destination ports: 9166 / 271
+-------------------------------------------------------------------------
+Delay:               14.986ns (Levels of Logic = 14)
+  Source:            sync/h_count_reg_0 (FF)
+  Destination:       rgb_reg_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sync/h_count_reg_0 to rgb_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            11   0.720   1.483  sync/h_count_reg_0 (sync/h_count_reg_0)
+     LUT2:I0->O            1   0.551   0.000  gph/Msub_p2_bitcol_lut<0> (gph/Msub_p2_bitcol_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  gph/Msub_p2_bitcol_cy<0> (gph/Msub_p2_bitcol_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  gph/Msub_p2_bitcol_cy<1> (gph/Msub_p2_bitcol_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  gph/Msub_p2_bitcol_cy<2> (gph/Msub_p2_bitcol_cy<2>)
+     XORCY:CI->O           1   0.904   0.801  gph/Msub_p2_bitcol_xor<3> (gph/p2_bitcol<3>)
+     INV:I->O             12   0.551   1.118  gph/_COND_9<1>1_INV_0 (gph/_COND_9<1>)
+     MUXF5:S->O            1   0.621   0.000  gph/Mmux_p2_bit_b_4_f5 (gph/Mmux_p2_bit_b_4_f5)
+     MUXF6:I1->O           1   0.342   0.000  gph/Mmux_p2_bit_b_3_f6 (gph/Mmux_p2_bit_b_3_f6)
+     MUXF7:I1->O           2   0.342   1.216  gph/Mmux_p2_bit_b_2_f7 (gph/p2_bit_b)
+     LUT3:I0->O            3   0.551   0.975  gph/graph_rgb_and000111 (gph/N24)
+     LUT4:I2->O            1   0.551   0.827  rgb_next<2>26 (rgb_next<2>26)
+     LUT4:I3->O            1   0.551   1.140  rgb_next<2>45 (rgb_next<2>45)
+     LUT4:I0->O            1   0.551   0.000  rgb_next<2>981 (rgb_next<2>98)
+     MUXF5:I1->O           1   0.360   0.000  rgb_next<2>98_f5 (rgb_next<2>)
+     FDCE:D                    0.203          rgb_reg_2
+    ----------------------------------------
+    Total                     14.986ns (7.426ns logic, 7.560ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fresh1'
+  Clock period: 19.852ns (frequency: 50.372MHz)
+  Total number of paths / destination ports: 567101 / 117
+-------------------------------------------------------------------------
+Delay:               19.852ns (Levels of Logic = 17)
+  Source:            gph/p1_x_2 (FF)
+  Destination:       gph/p2_x_next_8 (FF)
+  Source Clock:      fresh1 rising
+  Destination Clock: fresh1 rising
+
+  Data Path: gph/p1_x_2 to gph/p2_x_next_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             19   0.720   1.476  gph/p1_x_2 (gph/p1_x_2)
+     LUT4:I3->O            1   0.551   0.996  gph/Madd_old_p1_x_next_7_addsub0000_Madd_xor<5>11 (gph/old_p1_x_next_7_addsub0000<5>)
+     LUT2:I1->O            1   0.551   0.000  gph/Mcompar_old_p1_x_next_7_cmp_le0000_lut<5> (gph/Mcompar_old_p1_x_next_7_cmp_le0000_lut<5>)
+     MUXCY:S->O            1   0.500   0.000  gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<5> (gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<6> (gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<7> (gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<8> (gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<8>)
+     MUXCY:CI->O          11   0.303   1.170  gph/Mcompar_old_p1_x_next_7_cmp_le0000_cy<9> (gph/old_p1_x_next_7_cmp_le0000)
+     LUT4:I3->O            3   0.551   0.907  gph/Maddsub_old_p1_x_next_7_share0000_cy<0>11 (gph/Maddsub_old_p1_x_next_7_share0000_cy<0>)
+     MUXF5:S->O            3   0.621   0.933  gph/Maddsub_old_p1_x_next_7_share0000_cy<3>11 (gph/Maddsub_old_p1_x_next_7_share0000_cy<3>)
+     LUT4:I3->O            5   0.551   0.947  gph/Maddsub_old_p1_x_next_7_share0000_cy<5>11 (gph/Maddsub_old_p1_x_next_7_share0000_cy<5>)
+     LUT4:I3->O            3   0.551   0.975  gph/_old_p1_x_next_7<7>1 (gph/Madd_p2_x_next_addsub0000_Madd_lut<7>)
+     LUT4:I2->O            1   0.551   0.000  gph/Mcompar_p2_x_next_cmp_le0000_lut<7> (gph/Mcompar_p2_x_next_cmp_le0000_lut<7>)
+     MUXCY:S->O            1   0.500   0.000  gph/Mcompar_p2_x_next_cmp_le0000_cy<7> (gph/Mcompar_p2_x_next_cmp_le0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  gph/Mcompar_p2_x_next_cmp_le0000_cy<8> (gph/Mcompar_p2_x_next_cmp_le0000_cy<8>)
+     MUXCY:CI->O          10   0.303   1.160  gph/Mcompar_p2_x_next_cmp_le0000_cy<9> (gph/p2_x_next_cmp_le0000)
+     LUT4:I3->O           27   0.551   1.850  gph/p2_x_next_and00001 (gph/p2_x_next_and00001)
+     LUT4:I3->O            1   0.551   0.801  gph/p2_x_next_mux0000<0>0 (gph/p2_x_next_mux0000<0>0)
+     FDS:S                     1.026          gph/p2_x_next_0
+    ----------------------------------------
+    Total                     19.852ns (8.637ns logic, 11.215ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 21 / 20
+-------------------------------------------------------------------------
+Offset:              5.384ns (Levels of Logic = 2)
+  Source:            sw<0> (PAD)
+  Destination:       action_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw<0> to action_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.821   0.921  sw_0_IBUF (sw_0_IBUF)
+     INV:I->O             69   0.551   2.065  sw<0>_inv1_INV_0 (sw<0>_inv)
+     FDR:R                     1.026          action_reg_0
+    ----------------------------------------
+    Total                      5.384ns (2.398ns logic, 2.986ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5071 / 17
+-------------------------------------------------------------------------
+Offset:              20.658ns (Levels of Logic = 10)
+  Source:            cvt/data_5 (FF)
+  Destination:       segment<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cvt/data_5 to segment<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              18   0.720   1.756  cvt/data_5 (cvt/data_5)
+     LUT4:I0->O            1   0.551   0.996  cvt/bcd<1>1_SW1 (N163)
+     LUT4:I1->O            2   0.551   1.072  cvt/bcd<1>1 (cvt/bcd<1>_bdd0)
+     LUT3:I1->O            1   0.551   0.996  cvt/bcd<1>2 (blood_BCD<1>)
+     LUT3:I1->O            1   0.551   0.000  disp/XLXI_2/XLXI_3/Mmux_num_41 (disp/XLXI_2/XLXI_3/Mmux_num_41)
+     MUXF5:I0->O          11   0.360   1.144  disp/XLXI_2/XLXI_3/Mmux_num_2_f5_0 (disp/h<1>)
+     INV:I->O              8   0.551   1.083  disp/XLXI_3/XLXI_98 (disp/XLXI_3/XLXN_166)
+     AND4:I1->O            2   0.551   0.877  disp/XLXI_3/XLXI_249 (disp/XLXI_3/XLXN_135)
+     OR4:I3->O             1   0.551   0.801  disp/XLXI_3/XLXI_273 (disp/XLXI_3/XLXN_186)
+     OR2:I1->O             1   0.551   0.801  disp/XLXI_3/XLXI_291 (segment_5_OBUF)
+     OBUF:I->O                 5.644          segment_5_OBUF (segment<5>)
+    ----------------------------------------
+    Total                     20.658ns (11.132ns logic, 9.526ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 47.26 secs
+ 
+--> 
+
+Total memory usage is 376916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   98 (   0 filtered)
+Number of infos    :   67 (   0 filtered)
+

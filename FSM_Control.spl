@@ -1,0 +1,14 @@
+[Inputs]
+clk
+btn
+over
+timeout
+=hit[3:0]=
+[Outputs]
+reset
+=blood_dec[15:0]=
+=graph_state[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel FSM_Control
+

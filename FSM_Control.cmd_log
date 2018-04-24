@@ -1,0 +1,4 @@
+vhdtdtfi -lang verilog -prj Course_Project -o F:/Course_Project/FSM_Control.tfi -lib work F:/Course_Project//FSM_Control.v -module FSM_Control -template d:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work F:/Course_Project/FSM_Control.v -lang verilog -prj Course_Project -o FSM_Control.spl -module FSM_Control -template d:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 FSM_Control.spl F:/Course_Project/FSM_Control.sym 
+vhdtdtfi -lang verilog -prj Course_Project -o F:/Course_Project/FSM_Control.tfi -lib work F:/Course_Project//FSM_Control.v -module FSM_Control -template d:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,629 @@
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim top.ngd top_translate.v 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+xst -intstyle ise -ifn "F:/Course_Project/top.xst" -ofn "F:/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project/top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.29/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.29/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project12.29_modified/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project12.29_modified/top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project12.29_modified/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project12.29_modified/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project12.30/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project12.30/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.5_m/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.5_m/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/Course_Project1.8(M/top.xst" -ofn "C:/Users/CST/Desktop/Course_Project1.8(M/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Course_Project1.10/top.xst" -ofn "C:/Users/Administrator/Desktop/Course_Project1.10/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 

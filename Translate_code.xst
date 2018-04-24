@@ -1,0 +1,5 @@
+set -tmpdir "F:/Course_Project/xst/projnav.tmp"
+set -xsthdpdir "F:/Course_Project/xst"
+elaborate
+-ifn Translate_code.prj
+-ifmt mixed

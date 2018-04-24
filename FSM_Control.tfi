@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+FSM_Control instance_name (
+    .clk(clk), 
+    .btn(btn), 
+    .hit(hit), 
+    .over(over), 
+    .timeout(timeout), 
+    .blood_dec(blood_dec), 
+    .reset(reset), 
+    .graph_state(graph_state)
+    );
+
+

@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+Font instance_name (
+    .pixel_x(pixel_x), 
+    .pixel_y(pixel_y), 
+    .video_on(video_on), 
+    .graph_state(graph_state), 
+    .blood(blood), 
+    .font_rgb(font_rgb), 
+    .font_on(font_on)
+    );
+
+

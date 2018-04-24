@@ -1,0 +1,55 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/CST/Desktop/Course_Project1.5_m/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/CST/Desktop/Course_Project1.5_m/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "p2_rom_red.v" in library work
+Compiling verilog file "p2_rom_green.v" in library work
+Module <p2_rom_red> compiled
+Compiling verilog file "p2_rom_blue.v" in library work
+Module <p2_rom_green> compiled
+Compiling verilog file "p1_rom_red.v" in library work
+Module <p2_rom_blue> compiled
+Compiling verilog file "p1_rom_green.v" in library work
+Module <p1_rom_red> compiled
+Compiling verilog file "p1_rom_blue.v" in library work
+Module <p1_rom_green> compiled
+Compiling verilog file "bg_rom_r.v" in library work
+Module <p1_rom_blue> compiled
+Compiling verilog file "bg_rom_g.v" in library work
+Module <bg_rom_r> compiled
+Compiling verilog file "bg_rom_b.v" in library work
+Module <bg_rom_g> compiled
+Compiling verilog file "graph.v" in library work
+Module <bg_rom_b> compiled
+Module <graph> compiled
+No errors in compilation
+Analysis of file <"graph.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> 
+
+Total memory usage is 171900 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

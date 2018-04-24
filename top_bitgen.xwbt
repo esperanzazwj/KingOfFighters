@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Administrator\Desktop\Course_Project1.10\top.ncd
+OUTFILE=C:\Users\Administrator\Desktop\Course_Project1.10\top.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\Administrator\Desktop\Course_Project1.10
+LICENSE=WebPack
+USER_INFO=__0_0_0

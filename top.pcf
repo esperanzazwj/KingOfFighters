@@ -1,0 +1,49 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Mon Jan 18 18:04:46 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "segment<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "P16" LEVEL 1;
+COMP "ps2c" LOCATE = SITE "M16" LEVEL 1;
+COMP "ps2d" LOCATE = SITE "M15" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "J13" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "K14" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "K13" LEVEL 1;
+COMP "hsync" LOCATE = SITE "R9" LEVEL 1;
+COMP "vsync" LOCATE = SITE "T10" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "M13" LEVEL 1;
+PIN btn<0>_pin<0> = BEL "btn<0>" PINNAME PAD;
+PIN "btn<0>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "btn<1>" LOCATE = SITE "M14" LEVEL 1;
+PIN btn<1>_pin<0> = BEL "btn<1>" PINNAME PAD;
+PIN "btn<1>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "btn<2>" LOCATE = SITE "L13" LEVEL 1;
+PIN btn<2>_pin<0> = BEL "btn<2>" PINNAME PAD;
+PIN "btn<2>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "btn<3>" LOCATE = SITE "L14" LEVEL 1;
+PIN btn<3>_pin<0> = BEL "btn<3>" PINNAME PAD;
+PIN "btn<3>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "rgb<0>" LOCATE = SITE "R11" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "T12" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "R12" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+SCHEMATIC END;
+

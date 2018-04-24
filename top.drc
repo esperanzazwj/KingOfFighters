@@ -1,0 +1,18 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon Jan 18 18:05:26 2016
+
+drc -z top.ncd top.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ft/ftROM/data_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ft/p1win_addr_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ft/font_addr_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

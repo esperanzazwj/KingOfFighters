@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/CST/Desktop/Course_Project12.29/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/CST/Desktop/Course_Project12.29/xst"
+elaborate
+-ifn p1_action_rom.prj
+-ifmt mixed
